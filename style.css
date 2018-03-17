@@ -20,11 +20,21 @@ h1  {
     text-align: center;
     margin-top: 40vh;
 }
+
 hr {
     border: 3px solid aqua;
     margin: 0 auto;
     max-width: 50vw;
+    animation-name: baranimate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
 }
+@keyframes baranimate {
+    0% {width: 50vw}
+    50% {width: 25vw}
+    100% {width: 50vw}
+}
+
 .flex-button {
     display: flex;
     justify-content: center;
@@ -43,6 +53,12 @@ button {
     transition: opacity 1s;
     cursor: pointer;
     border-style: none;
+    animation: 4s slidein;
+    animation-iteration-count: infinite;
+}
+@keyframes slidein {
+    from { transform: scaleX(0.9); }
+    to   { transform: scaleX(1); }
 }
 
 button:hover {
