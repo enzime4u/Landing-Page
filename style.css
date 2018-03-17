@@ -40,7 +40,7 @@ hr {
     justify-content: center;
     padding: 2em 0;
 }
-button {
+.my-btn {
     background-color: #9D0004;
     color: white;
     font-family: "Fira Sans";
@@ -61,10 +61,10 @@ button {
     to   { transform: scaleX(1); }
 }
 
-button:hover {
+.my-btn:hover {
     opacity: 1;
 }
 
-button:focus {
+.my-btn:focus {
     outline: 0;
 }
